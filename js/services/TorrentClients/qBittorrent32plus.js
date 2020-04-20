@@ -13,7 +13,7 @@ DuckieTorrent.factory('qBittorrent32plusAPI', ['qBittorrentAPI', '$http', '$q',
   function(qBittorrentAPI, $http, $q) {
     var qBittorrent32plusAPI = function() {
       qBittorrentAPI.call(this)
-      this.config.apiVersion = 1 // lets assume the API is v1 to begin with
+      this.config.apiVersion = 2 // lets assume the API is v1 to begin with
       this.config.apiSubVersion = 0
     }
     qBittorrent32plusAPI.extends(qBittorrentAPI, {
